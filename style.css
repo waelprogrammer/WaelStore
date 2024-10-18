@@ -822,7 +822,7 @@ h3.cart-title {
 
 
 
-/* PUBG Section Styles */
+/* Base Styles */
 #pubg-section {
   background-color: #ffffff;
   padding: 40px;
@@ -831,11 +831,11 @@ h3.cart-title {
 
 #pubg-section .pubg-container {
   display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap for smaller screens */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Keep the container responsive */
-  max-width: 1400px; /* Increase this value for a wider container */
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   border-radius: 15px;
   background: linear-gradient(135deg, #171a23, #0d0f14);
@@ -844,12 +844,11 @@ h3.cart-title {
   padding: 20px;
 }
 
-
 #pubg-section .form-content {
   flex: 1;
   padding-right: 20px;
   text-align: left;
-  min-width: 300px; /* Minimum width for form content */
+  min-width: 300px;
 }
 
 #pubg-section .section-title {
@@ -899,7 +898,7 @@ h3.cart-title {
 #pubg-section .image-content {
   flex: 1;
   text-align: right;
-  min-width: 300px; /* Minimum width for image content */
+  min-width: 300px;
 }
 
 #pubg-section .pubg-image {
@@ -912,29 +911,71 @@ h3.cart-title {
 
 @keyframes zoom-in {
   from {
-      transform: scale(1.2);
+    transform: scale(1.2);
   }
   to {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   #pubg-section .pubg-container {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the left */
+    flex-direction: column;
+    align-items: center;
   }
 
   #pubg-section .form-content {
-    padding-right: 0; /* Remove right padding on smaller screens */
-    margin-bottom: 20px; /* Add margin below form content */
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   #pubg-section .image-content {
-    text-align: center; /* Center align the image */
+    width: 100%;
+    text-align: center;
+  }
+
+  #pubg-section .pubg-image {
+    max-width: 80%;
+    margin-top: 20px;
   }
 }
+
+/* Media Query for iPhone 14 (390px width) */
+@media (max-width: 400px) {
+  #pubg-section {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  #pubg-section .form-content {
+    padding-right: 0;
+    text-align: center; /* Center the form content */
+    min-width: 100%; /* Ensure form takes up full width */
+  }
+
+  #pubg-section .image-content {
+    width: 100%; /* Ensure image content takes up full width */
+    text-align: center; /* Center the image */
+  }
+
+  #pubg-section .pubg-image {
+    max-width: 70%; /* Reduce the size of the image */
+    margin-top: 15px;
+  }
+
+  #pubg-section .input-field {
+    padding: 10px; /* Reduce input field padding */
+  }
+
+  #pubg-section .submit-button {
+    padding: 10px; /* Adjust button padding */
+    font-size: 16px; /* Reduce font size slightly */
+  }
+}
+
+
 
 
 
