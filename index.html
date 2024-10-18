@@ -711,27 +711,47 @@
 
 
 
-    <section >
+    <section>
       <div id="pubg-section">
-        <div class="pubg-container">
-            <div class="form-content">
-                <h2 class="section-title">Request PUBG Mobile UC</h2>
-                <form>
-                    <label for="pubg-id" class="label-id">Your PUBG ID:</label>
-                    <input type="text" id="pubg-id" name="pubg-id" placeholder="Enter your PUBG ID" class="input-field id-input" required>
-    
-                    <label for="uc-amount" class="label-uc">Number of UC:</label>
-                    <input type="number" id="uc-amount" name="uc-amount" placeholder="Enter amount of UC" class="input-field uc-input" required>
-    
-                    <button type="submit" class="submit-button">Send Request</button>
-                </form>
-            </div>
-            <div class="image-content">
-                <img src="images/uc-pubg-mobile.jpg" alt="PUBG Mobile UC" class="pubg-image">
-            </div><span id="freefire"></span>
-        </div>
-    </div>
-<section >
+          <div class="pubg-container">
+              <div class="form-content">
+                  <h2 class="section-title">Request PUBG Mobile UC</h2>
+                  <form id="pubg-form" onsubmit="sendWhatsAppMessage(event)">
+                      <label for="pubg-id" class="label-id">Your PUBG ID:</label>
+                      <input type="text" id="pubg-id" name="pubg-id" placeholder="Enter your PUBG ID" class="input-field id-input" required>
+  
+                      <label for="uc-amount" class="label-uc">Number of UC:</label>
+                      <input type="number" id="uc-amount" name="uc-amount" placeholder="Enter amount of UC" class="input-field uc-input" required>
+  
+                      <button type="submit" class="submit-button">Send Request</button>
+                  </form>
+              </div>
+              <div class="image-content">
+                  <img src="images/uc-pubg-mobile.jpg" alt="PUBG Mobile UC" class="pubg-image">
+              </div>
+              <span id="freefire"></span>
+          </div>
+      </div>
+  </section>
+  
+  <script>
+      function sendWhatsAppMessage(event) {
+          event.preventDefault(); // Prevent the form from submitting
+  
+          // Get the values from the form
+          const pubgId = document.getElementById('pubg-id').value;
+          const ucAmount = document.getElementById('uc-amount').value;
+  
+          const phoneNumber = '+96181162451'; // Your WhatsApp number
+          const message = encodeURIComponent(`PUBG ID: ${pubgId}, Amount of UC: ${ucAmount}`);
+  
+          // Create the WhatsApp link
+          const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+  
+          // Open the WhatsApp link in a new tab
+          window.open(whatsappLink, '_blank');
+      }
+  </script>
     <div id="pubg-section">
       <div class="pubg-container">
           <div class="form-content">
