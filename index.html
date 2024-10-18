@@ -16,8 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
    
+=======
+>>>>>>> 148375965eedf08570148ba0e9bad16abc47b276
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -687,6 +690,154 @@
                       </div>
                   </div>
               </div>
+<<<<<<< HEAD
+=======
+            </div>
+    
+            <div class="product-card position-relative col-xl-6 col-md-6">
+              <div class="image-holder">
+                <img src="images/shahid1.jpg" alt="product-item" class="img-fluid" style="max-width: 100%;">
+              </div>
+              <div class="card-detail pt-3">
+                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                  <p class="card-title text-uppercase" style="color:black;font-size:20px">1 User</p>
+                  <span class="item-price text-primary"></span>
+                </div>
+                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                  <button class="card-title buy-buttonshahid">1 month</button>
+                  <span class="item-price text-primary">2.25$</span>
+                </div>
+                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                  <button class="card-title buy-buttonshahid">1 year</button>
+                  <span class="item-price text-primary">10$</span>
+                </div>
+                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                  <p class="card-title text-uppercase" style="color:black;font-size:20px">Full Account</p>
+                  <span class="item-price text-primary"></span>
+                </div>
+                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                  <button class="card-title buy-buttonshahid">1 month</button>
+                  <span class="item-price text-primary">8$</span>
+                </div>
+                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                  <button class="card-title buy-buttonshahid">1 year</button>
+                  <span class="item-price text-primary">29$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination position-absolute text-center"></div>
+      <span id="pubg-mobile"></span>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+      <div id="pubg-section">
+          <div class="pubg-container">
+              <div class="form-content">
+                  <h2 class="section-title">Request PUBG Mobile UC</h2>
+                  <form id="pubg-form" onsubmit="sendWhatsAppMessage(event)">
+                      <label for="pubg-id" class="label-id">Your PUBG ID:</label>
+                      <input type="text" id="pubg-id" name="pubg-id" placeholder="Enter your PUBG ID" class="input-field id-input" required>
+  
+                      <label for="uc-amount" class="label-uc">Number of UC:</label>
+                      <input type="number" id="uc-amount" name="uc-amount" placeholder="Enter amount of UC" class="input-field uc-input" required>
+  
+                      <button type="submit" class="submit-button">Send Request</button>
+                  </form>
+              </div>
+              <div class="image-content">
+                  <img src="images/uc-pubg-mobile.jpg" alt="PUBG Mobile UC" class="pubg-image">
+              </div>
+              <span id="freefire"></span>
+          </div>
+      </div>
+  </section>
+  
+  <script>
+      function sendWhatsAppMessage(event) {
+          event.preventDefault(); // Prevent the form from submitting
+  
+          // Get the values from the form
+          const pubgId = document.getElementById('pubg-id').value;
+          const ucAmount = document.getElementById('uc-amount').value;
+  
+          const phoneNumber = '+96181162451'; // Your WhatsApp number
+          const message = encodeURIComponent(`PUBG ID: ${pubgId}, Amount of UC: ${ucAmount}`);
+  
+          // Create the WhatsApp link
+          const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+  
+          // Open the WhatsApp link in a new tab
+          window.open(whatsappLink, '_blank');
+      }
+  </script>
+    <div id="pubg-section">
+      <div class="pubg-container">
+          <div class="form-content">
+              <h2 class="section-title"> FreeFire Diamonds</h2>
+              <form>
+                  <label for="pubg-id" class="label-id">Your FreeFire ID:</label>
+                  <input type="text" id="pubg-id" name="pubg-id" placeholder="Enter your PUBG ID" class="input-field id-input" required>
+  
+                  <label for="uc-amount" class="label-uc">Number of Diamonds:</label>
+                  <input type="number" id="uc-amount" name="uc-amount" placeholder="Enter amount of Diamonds" class="input-field uc-input" required>
+  
+                  <button type="submit" class="submit-button">Send Request</button>
+              </form>
+          </div>
+          <div class="image-content">
+              <img src="images/freefireD.webp" alt="PUBG Mobile UC" class="pubg-image">
+>>>>>>> 148375965eedf08570148ba0e9bad16abc47b276
           </div>
       </div>
   </div>
