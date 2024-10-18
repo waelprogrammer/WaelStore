@@ -17,12 +17,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+  <body  data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <title>Search</title>
@@ -134,11 +134,7 @@
                   <a class="nav-link me-4" href="#freefire">Free Fire</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4" href="#contact">Contact Info </a>
-                </li>
-                
-                    </ul>
-                  </div>
+                  <a class="nav-link me-4" href="#contact">Contact Info</a>
                 </li>
               </ul>
             </div>
@@ -146,6 +142,7 @@
         </div>
       </nav>
     </header>
+    
     
     <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
       <div class="swiper main-swiper">
@@ -283,118 +280,135 @@
     
     <section class="product-store position-relative padding-large no-padding-top">
       <div class="container-fluide custom-container">
-        <div class="row">
-          <div class="display-header d-flex justify-content-between pb-3">
-            <h2 class="display-7 text-dark text-uppercase">Instagram</h2>
-          </div>
           <div class="row">
-            <div class="col-md-3">
-              <div class="product-card position-relative">
-                <div class="image-holder">
-                  <img src="images/instagram-followers-6.jpg" alt="product-item" style="width:100%; height:auto;">
-                </div>
-                <div class="card-detail pt-3">
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <p class="card-title text-uppercase" style="color:black;font-size:20px">Followers</p>
-                    <span class="item-price text-primary">Life Time</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">1k followers</button>
-                    <span class="item-price text-primary">3$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">5k followers</button>
-                    <span class="item-price text-primary">7$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-button">10k followers</button>
-                    <span class="item-price text-primary">13.5$</span>
-                  </div>
-                </div>
+              <div class="display-header d-flex justify-content-between pb-3">
+                  <h2 class="display-7 text-dark text-uppercase">Instagram</h2>
               </div>
-            </div>
-            
-            <div class="col-md-3">
-              <div class="product-card position-relative">
-                <div class="image-holder">
-                  <img src="images/instagram-followers-7.jpg" alt="product-item" style="width:100%; height:auto;">
-                </div>
-                <div class="card-detail pt-3">
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <p class="card-title text-uppercase" style="color:black;font-size:20px">Followers</p>
-                    <span class="item-price text-primary">refill</span>
+              <div class="row">
+                  <!-- Followers - Lifetime -->
+                  <div class="col-md-3">
+                      <div class="product-card position-relative">
+                          <div class="image-holder">
+                              <img src="images/instagram-followers-6.jpg" alt="product-item" style="width:100%; height:auto;">
+                          </div>
+                          <div class="card-detail pt-3">
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <p class="card-title text-uppercase" style="color:black;font-size:20px">Followers</p>
+                                  <span class="item-price text-primary">Life Time</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('1k followers', '3$', 'Life Time')">1k followers</button>
+                                  <span class="item-price text-primary">3$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('5k followers', '7$', 'Life Time')">5k followers</button>
+                                  <span class="item-price text-primary">7$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('10k followers', '13.5$', 'Life Time')">10k followers</button>
+                                  <span class="item-price text-primary">13.5$</span>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">1k followers</button>
-                    <span class="item-price text-primary">1.5$</span>
+  
+                  <!-- Followers - Refill -->
+                  <div class="col-md-3">
+                      <div class="product-card position-relative">
+                          <div class="image-holder">
+                              <img src="images/instagram-followers-7.jpg" alt="product-item" style="width:100%; height:auto;">
+                          </div>
+                          <div class="card-detail pt-3">
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <p class="card-title text-uppercase" style="color:black;font-size:20px">Followers</p>
+                                  <span class="item-price text-primary">Refill</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('1k followers', '1.5$', 'Refill')">1k followers</button>
+                                  <span class="item-price text-primary">1.5$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('5k followers', '5.5$', 'Refill')">5k followers</button>
+                                  <span class="item-price text-primary">5.5$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('10k followers', '10$', 'Refill')">10k followers</button>
+                                  <span class="item-price text-primary">10$</span>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">5k followers</button>
-                    <span class="item-price text-primary">5.5$</span>
+  
+                  <!-- Likes -->
+                  <div class="col-md-3">
+                      <div class="product-card position-relative">
+                          <div class="image-holder">
+                              <img src="images/instagram24.jpeg" alt="product-item" style="width:100%; height:auto;">
+                          </div>
+                          <div class="card-detail pt-3">
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <p class="card-title text-uppercase" style="color:black;font-size:20px">Likes</p>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('1k likes', '1$', '')">1k likes</button>
+                                  <span class="item-price text-primary">1$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('5k likes', '4$', '')">5k likes</button>
+                                  <span class="item-price text-primary">4$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('10k likes', '7$', '')">10k likes</button>
+                                  <span class="item-price text-primary">7$</span>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-button">10k followers</button>
-                    <span class="item-price text-primary">10$</span>
+  
+                  <!-- Views -->
+                  <div class="col-md-3">
+                      <div class="product-card position-relative">
+                          <div class="image-holder">
+                              <img src="images/instagram-views3 (1).png" alt="product-item" style="width:100%; height:auto;">
+                          </div>
+                          <div class="card-detail pt-3">
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <p class="card-title text-uppercase" style="color:black;font-size:20px">Views</p>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('1k views', '1$', '')">1k views</button>
+                                  <span class="item-price text-primary">1$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('5k views', '3.5$', '')">5k views</button>
+                                  <span class="item-price text-primary">3.5$</span>
+                              </div>
+                              <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                  <button class="card-title buy-button" onclick="sendWhatsAppMessage1('10k views', '5.5$', '')">10k views</button>
+                                  <span class="item-price text-primary">5.5$</span>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
-            
-            <div class="col-md-3">
-              <div class="product-card position-relative">
-                <div class="image-holder">
-                  <img src="images/instagram24.jpeg" alt="product-item" style="width:100%; height:auto;">
-                </div>
-                <div class="card-detail pt-3">
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <p class="card-title text-uppercase" style="color:black;font-size:20px">Likes</p>
-                    <span class="item-price text-primary"></span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">1k likes</button>
-                    <span class="item-price text-primary">1$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">5k likes</button>
-                    <span class="item-price text-primary">4$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-button">10k likes</button>
-                    <span class="item-price text-primary">7$</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-md-3">
-              <div class="product-card position-relative">
-                <div class="image-holder">
-                  <img src="images/instagram-views3 (1).png" alt="product-item" style="width:100%; height:auto;">
-                </div>
-                <div class="card-detail pt-3">
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <p class="card-title text-uppercase" style="color:black;font-size:20px">Views</p>
-                    <span class="item-price text-primary"></span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">1k views</button>
-                    <span class="item-price text-primary">1$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-button">5k views</button>
-                    <span class="item-price text-primary">3.5$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-button">10k views</button>
-                    <span class="item-price text-primary">5.5$</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-    </section>
+      <span id="Tiktok-services"></span>
+  </section>
+  
+  <script>
+      function sendWhatsAppMessage1(product, price, duration) {
+          const phoneNumber = '+96181162451'; // Your WhatsApp number
+          const message = encodeURIComponent(`Instagram ${product}\nPrice: ${price}\n${duration ? `Duration: ${duration}` : ''}\nI want this order give me more information please`);
+          
+          // Create the WhatsApp link
+          const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+          
+          // Open the WhatsApp link in a new tab
+          window.open(whatsappLink, '_blank');
+      }
+  </script>
+  
     
     
 
@@ -444,100 +458,114 @@
 
 
 
-    <section class="product-store position-relative padding-large no-padding-top">
-      <div class="container-fluide custom-container">
+  <section class="product-store position-relative padding-large no-padding-top">
+    <div class="container-fluide custom-container">
         <div class="row">
-          <div class="display-header d-flex justify-content-between pb-3">
-            <h2 class="display-7 text-dark text-uppercase">Tiktok</h2>
-          </div>
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="product-card position-relative">
-                <div class="image-holder">
-                  <img src="images/titokfooloowers.jpeg" class="img-fluid" alt="product-item" style="width: 100%; height: auto;">
-                </div>
-                <div class="card-detail pt-3">
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <p class="card-title text-uppercase" style="color:black;font-size:20px">Followers</p>
-                    <span class="item-price text-primary"></span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-buttontiktok">1k followers</button>
-                    <span class="item-price text-primary">4$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-buttontiktok">5k followers</button>
-                    <span class="item-price text-primary">13$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-buttontiktok">10k followers</button>
-                    <span class="item-price text-primary">21$</span>
-                  </div>
-                </div>
-              </div>
+            <div class="display-header d-flex justify-content-between pb-3">
+                <h2 class="display-7 text-dark text-uppercase">Tiktok</h2>
             </div>
-    
-            <div class="col-md-4 mb-4">
-              <div class="product-card position-relative">
-                <div class="image-holder">
-                  <img src="images/tiktoklikes.jpeg" class="img-fluid" alt="product-item" style="width: 100%; height: auto;">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="product-card position-relative">
+                        <div class="image-holder">
+                            <img src="images/titokfooloowers.jpeg" class="img-fluid" alt="product-item" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="card-detail pt-3">
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <p class="card-title text-uppercase" style="color:black;font-size:20px">Followers</p>
+                                <span class="item-price text-primary"></span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('1k followers', '4$', '')">1k followers</button>
+                                <span class="item-price text-primary">4$</span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('5k followers', '13$', '')">5k followers</button>
+                                <span class="item-price text-primary">13$</span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('10k followers', '21$', '')">10k followers</button>
+                                <span class="item-price text-primary">21$</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-detail pt-3">
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <p class="card-title text-uppercase" style="color:black;font-size:20px">Likes</p>
-                    <span class="item-price text-primary"></span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-buttontiktok">1k likes</button>
-                    <span class="item-price text-primary">1.5$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-buttontiktok">5k likes</button>
-                    <span class="item-price text-primary">3$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-buttontiktok">10k likes</button>
-                    <span class="item-price text-primary">5.5$</span>
-                  </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="product-card position-relative">
+                        <div class="image-holder">
+                            <img src="images/tiktoklikes.jpeg" class="img-fluid" alt="product-item" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="card-detail pt-3">
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <p class="card-title text-uppercase" style="color:black;font-size:20px">Likes</p>
+                                <span class="item-price text-primary"></span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('1k likes', '1.5$', '')">1k likes</button>
+                                <span class="item-price text-primary">1.5$</span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('5k likes', '3$', '')">5k likes</button>
+                                <span class="item-price text-primary">3$</span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('10k likes', '5.5$', '')">10k likes</button>
+                                <span class="item-price text-primary">5.5$</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="product-card position-relative">
+                        <div class="image-holder">
+                            <img src="images/tiktokviwes.jpeg" class="img-fluid" alt="product-item" style="width: 100%; height: auto;">
+                        </div>
+                        <div class="card-detail pt-3">
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <p class="card-title text-uppercase" style="color:black;font-size:20px">Views</p>
+                                <span class="item-price text-primary"></span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('1k views', '1$', '')">1k views</button>
+                                <span class="item-price text-primary">1$</span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('5k views', '3.5$', '')">5k views</button>
+                                <span class="item-price text-primary">3.5$</span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('10k views', '5$', '')">10k views</button>
+                                <span class="item-price text-primary">5$</span>
+                            </div>
+                            <div class="follower-item d-flex justify-content-between align-items-baseline">
+                                <button class="card-title buy-buttontiktok" onclick="sendTikTokMessage('1M views', '10$', '')">1M views</button>
+                                <span class="item-price text-primary">10$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="col-md-4 mb-4">
-              <div class="product-card position-relative">
-                <div class="image-holder">
-                  <img src="images/tiktokviwes.jpeg" class="img-fluid" alt="product-item" style="width: 100%; height: auto;">
-                </div>
-                <div class="card-detail pt-3">
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <p class="card-title text-uppercase" style="color:black;font-size:20px">Views</p>
-                    <span class="item-price text-primary"></span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-buttontiktok">1k views</button>
-                    <span class="item-price text-primary">1$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                    <button class="card-title buy-buttontiktok">5k views</button>
-                    <span class="item-price text-primary">3.5$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-buttontiktok">10k views</button>
-                    <span class="item-price text-primary">5$</span>
-                  </div>
-                  <div class="follower-item d-flex justify-content-between align-items-baseline">
-                    <button class="card-title buy-buttontiktok">1M views</button>
-                    <span class="item-price text-primary">10$</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="swiper-pagination position-absolute text-center"></div>
-        <span id="NS-watche"></span>
-      </div>
-    </section>
+    </div>
+    <span id="NS-watche"></span>
+</section>
+
+<script>
+    function sendTikTokMessage(product, price, duration) {
+        const phoneNumber = '+96181162451'; // Your WhatsApp number
+        const message = encodeURIComponent(`TikTok: ${product}\nPrice: ${price}\n${duration ? `Duration: ${duration}` : ''}\nI want this order give me more information please`);
+        
+        // Create the WhatsApp link
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+        
+        // Open the WhatsApp link in a new tab
+        window.open(whatsappLink, '_blank');
+    }
+</script>
+
     
 
 
@@ -583,182 +611,291 @@
 
 
 
-
-    <section class="product-store position-relative padding-large no-padding-top">
-      <div class="container-fluide custom-container">
-        <div class="row">
+<section class="product-store position-relative padding-large no-padding-top">
+  <div class="container-fluide custom-container">
+      <div class="row">
           <div class="display-header d-flex justify-content-between pb-3">
-            <h2 class="display-7 text-dark text-uppercase">Netflix & Shahid</h2>
-            <!-- <div class="btn-right">
-                <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
-              </div>
-            -->
+              <h2 class="display-7 text-dark text-uppercase">Netflix & Shahid</h2>
           </div>
           <div class="row">
-            <div class="product-card position-relative col-xl-6 col-md-6 ">
-              <div class="image-holder">
-                <img src="images/netflix-logo.webp" alt="product-item" class="img-fluid" style="max-width: 100%;">
+              <!-- Netflix Product Card -->
+              <div class="product-card position-relative col-xl-6 col-md-6">
+                  <div class="image-holder">
+                      <img src="images/netflix-logo.webp" alt="product-item" class="img-fluid" style="max-width: 100%;">
+                  </div>
+                  <div class="card-detail pt-3">
+                      <!-- 1 User Account Type -->
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <p class="card-title text-uppercase account-type" style="color:black;font-size:20px">1 User</p>
+                          <span class="item-price text-primary"></span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonNS">1 month</button>
+                          <span class="item-price text-primary">2.45$</span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonNS">1 year</button>
+                          <span class="item-price text-primary">17$</span>
+                      </div>
+                      <!-- Full Account Type -->
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <p class="card-title text-uppercase account-type" style="color:black;font-size:20px">Full Account</p>
+                          <span class="item-price text-primary"></span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonNS">1 month</button>
+                          <span class="item-price text-primary">14$</span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonNS">1 year</button>
+                          <span class="item-price text-primary">95$</span>
+                      </div>
+                  </div>
               </div>
-              <div class="card-detail pt-3">
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <p class="card-title text-uppercase" style="color:black;font-size:20px">1 User</p>
-                  <span class="item-price text-primary"></span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonNS">1 month</button>
-                  <span class="item-price text-primary">2.45$</span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonNS">1 year</button>
-                  <span class="item-price text-primary">17$</span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <p class="card-title text-uppercase" style="color:black;font-size:20px">Full Account</p>
-                  <span class="item-price text-primary"></span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonNS">1 month</button>
-                  <span class="item-price text-primary">14$</span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonNS">1 year</button>
-                  <span class="item-price text-primary">95$</span>
-                </div>
+
+              <!-- Shahid Product Card -->
+              <div class="product-card position-relative col-xl-6 col-md-6">
+                  <div class="image-holder">
+                      <img src="images/shahid1.jpg" alt="product-item" class="img-fluid" style="max-width: 100%;">
+                  </div>
+                  <div class="card-detail pt-3">
+                      <!-- 1 User Account Type -->
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <p class="card-title text-uppercase account-type" style="color:black;font-size:20px">1 User</p>
+                          <span class="item-price text-primary"></span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonshahid">1 month</button>
+                          <span class="item-price text-primary">2.25$</span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonshahid">1 year</button>
+                          <span class="item-price text-primary">10$</span>
+                      </div>
+                      <!-- Full Account Type -->
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <p class="card-title text-uppercase account-type" style="color:black;font-size:20px">Full Account</p>
+                          <span class="item-price text-primary"></span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonshahid">1 month</button>
+                          <span class="item-price text-primary">8$</span>
+                      </div>
+                      <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
+                          <button class="card-title buy-buttonshahid">1 year</button>
+                          <span class="item-price text-primary">29$</span>
+                      </div>
+                  </div>
               </div>
-            </div>
-    
-            <div class="product-card position-relative col-xl-6 col-md-6">
-              <div class="image-holder">
-                <img src="images/shahid1.jpg" alt="product-item" class="img-fluid" style="max-width: 100%;">
-              </div>
-              <div class="card-detail pt-3">
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <p class="card-title text-uppercase" style="color:black;font-size:20px">1 User</p>
-                  <span class="item-price text-primary"></span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonshahid">1 month</button>
-                  <span class="item-price text-primary">2.25$</span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonshahid">1 year</button>
-                  <span class="item-price text-primary">10$</span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <p class="card-title text-uppercase" style="color:black;font-size:20px">Full Account</p>
-                  <span class="item-price text-primary"></span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonshahid">1 month</button>
-                  <span class="item-price text-primary">8$</span>
-                </div>
-                <div class="follower-item d-flex justify-content-between align-items-baseline mb-2">
-                  <button class="card-title buy-buttonshahid">1 year</button>
-                  <span class="item-price text-primary">29$</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination position-absolute text-center"></div>
-      <span id="pubg-mobile"></span>
-    </section>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section >
-      <div id="pubg-section">
-        <div class="pubg-container">
-            <div class="form-content">
-                <h2 class="section-title">Request PUBG Mobile UC</h2>
-                <form>
-                    <label for="pubg-id" class="label-id">Your PUBG ID:</label>
-                    <input type="text" id="pubg-id" name="pubg-id" placeholder="Enter your PUBG ID" class="input-field id-input" required>
-    
-                    <label for="uc-amount" class="label-uc">Number of UC:</label>
-                    <input type="number" id="uc-amount" name="uc-amount" placeholder="Enter amount of UC" class="input-field uc-input" required>
-    
-                    <button type="submit" class="submit-button">Send Request</button>
-                </form>
-            </div>
-            <div class="image-content">
-                <img src="images/uc-pubg-mobile.jpg" alt="PUBG Mobile UC" class="pubg-image">
-            </div><span id="freefire"></span>
-        </div>
-    </div>
-<section >
-    <div id="pubg-section">
-      <div class="pubg-container">
-          <div class="form-content">
-              <h2 class="section-title"> FreeFire Diamonds</h2>
-              <form>
-                  <label for="pubg-id" class="label-id">Your FreeFire ID:</label>
-                  <input type="text" id="pubg-id" name="pubg-id" placeholder="Enter your PUBG ID" class="input-field id-input" required>
-  
-                  <label for="uc-amount" class="label-uc">Number of Diamonds:</label>
-                  <input type="number" id="uc-amount" name="uc-amount" placeholder="Enter amount of Diamonds" class="input-field uc-input" required>
-  
-                  <button type="submit" class="submit-button">Send Request</button>
-              </form>
-          </div>
-          <div class="image-content">
-              <img src="images/freefireD.webp" alt="PUBG Mobile UC" class="pubg-image">
           </div>
       </div>
   </div>
+  <div class="swiper-pagination position-absolute text-center"></div>
+  <span id="pubg-mobile"></span>
+
+  <script>
+    function sendNSMessage(product, price, duration, accountType) {
+        const phoneNumber = '+96181162451'; // Your WhatsApp number
+        const message = encodeURIComponent(`${product}\nAccount Type: ${accountType}\nPrice: ${price}\n${duration ? `Duration: ${duration}` : ''}\nI want this order give me more information please`);
+  
+        // Create the WhatsApp link
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+  
+        // Open the WhatsApp link in a new tab
+        window.open(whatsappLink, '_blank');
+    }
+  
+    // Function to get the correct account type (1 User or Full Account)
+    function getAccountType(button) {
+        const followerItem = button.closest('.follower-item');
+        const accountTypeElement = followerItem.previousElementSibling.querySelector('.account-type');
+        
+        // Check the current button text to determine the account type
+        // If the account type element is 'Full Account', return that instead of '1 User'
+        if (accountTypeElement && accountTypeElement.textContent.includes('Full Account')) {
+            return 'Full Account';
+        } else if (button.textContent.includes('1 year') || button.textContent.includes('1 month')) {
+            // Hardcode this for "Full Account" section if the price matches Full Account prices
+            const price = button.nextElementSibling.textContent.trim();
+            if (price === '95$' || price === '29$') {
+                return 'Full Account';
+            }
+        }
+        return '1 User'; // Default to 1 User otherwise
+    }
+  
+    // Adding click event listeners for Netflix products
+    document.querySelectorAll('.buy-buttonNS').forEach(button => {
+        button.addEventListener('click', function() {
+            const product = 'Netflix';  // Hardcoded product name for Netflix
+            const price = this.nextElementSibling.textContent.trim();  // Get the price from the next sibling
+            const duration = this.textContent.trim(); // Get duration from button text
+  
+            // Get the correct account type based on its position in the card
+            const accountType = getAccountType(this);
+  
+            sendNSMessage(product, price, duration, accountType);
+        });
+    });
+  
+    // Adding click event listeners for Shahid products
+    document.querySelectorAll('.buy-buttonshahid').forEach(button => {
+        button.addEventListener('click', function() {
+            const product = 'Shahid';  // Hardcoded product name for Shahid
+            const price = this.nextElementSibling.textContent.trim();  // Get the price from the next sibling
+            const duration = this.textContent.trim(); // Get duration from button text
+  
+            // Get the correct account type based on its position in the card
+            const accountType = getAccountType(this);
+  
+            sendNSMessage(product, price, duration, accountType);
+        });
+    });
+  </script>
+  
+  
+  
+  
+</section>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+      <div id="pubg-section">
+          <div class="pubg-container">
+              <div class="form-content">
+                  <h2 class="section-title">Request PUBG Mobile UC</h2>
+                  <form id="pubg-form" onsubmit="sendWhatsAppMessage(event)">
+                      <label for="pubg-id" class="label-id">Your PUBG ID:</label>
+                      <input type="text" id="pubg-id" name="pubg-id" placeholder="Enter your PUBG ID" class="input-field id-input" required>
+  
+                      <label for="uc-amount" class="label-uc">Number of UC:</label>
+                      <input type="number" id="uc-amount" name="uc-amount" placeholder="Enter amount of UC" class="input-field uc-input" required>
+  
+                      <button type="submit" class="submit-button">Click to send via watsapp and  get more information</button>
+                  </form>
+              </div>
+              <div class="image-content">
+                  <img src="images/uc-pubg-mobile.jpg" alt="PUBG Mobile UC" class="pubg-image">
+              </div>
+              <span id="freefire"></span>
+          </div>
+      </div>
+  </section>
+  
+  <script>
+      function sendWhatsAppMessage(event) {
+          event.preventDefault(); // Prevent the form from submitting
+  
+          // Get the values from the form
+          const pubgId = document.getElementById('pubg-id').value;
+          const ucAmount = document.getElementById('uc-amount').value;
+  
+          const phoneNumber = '+96181162451'; // Your WhatsApp number
+          const message = encodeURIComponent(`PUBG ID: ${pubgId}\n Amount of UC: ${ucAmount}\nI want this order give me more information please`);
+  
+          // Create the WhatsApp link
+          const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+  
+          // Open the WhatsApp link in a new tab
+          window.open(whatsappLink, '_blank');
+      }
+  </script>
+  
+  <div id="pubg-section">
+    <div class="pubg-container">
+        <div class="form-content">
+            <h2 class="section-title">FreeFire Diamonds</h2>
+            <form id="freefire-form" onsubmit="sendWhatsAppMessage(event)">
+                <label for="freefire-id" class="label-id">Your FreeFire ID:</label>
+                <input type="text" id="freefire-id" name="freefire-id" placeholder="Enter your FreeFire ID" class="input-field id-input" required>
+
+                <label for="diamond-amount" class="label-uc">Number of Diamonds:</label>
+                <input type="number" id="diamond-amount" name="diamond-amount" placeholder="Enter amount of Diamonds" class="input-field uc-input" required>
+
+                <button type="submit" class="submit-button">Click to send via WhatsApp and get more information</button>
+            </form>
+        </div>
+        <div class="image-content">
+            <img src="images/freefireD.webp" alt="FreeFire Diamonds" class="pubg-image">
+        </div>
+    </div>
+</div>
+
+<script>
+    function sendWhatsAppMessage(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Get the values from the form
+        const freefireId = document.getElementById('freefire-id').value;
+        const diamondAmount = document.getElementById('diamond-amount').value;
+
+        const phoneNumber = '+96181162451'; // Your WhatsApp number
+        const message = encodeURIComponent(`FreeFire ID: ${freefireId}\nAmount of Diamonds: ${diamondAmount}\nI want this order give me more information please`);
+
+        // Create the WhatsApp link
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+
+        // Open the WhatsApp link in a new tab
+        window.open(whatsappLink, '_blank');
+    }
+</script>
+
     </section>
     
     
     
     
-    </section>
+    
 
 
 
