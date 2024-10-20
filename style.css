@@ -670,6 +670,19 @@ h3.cart-title {
     display: none;
   }
 }
+@media (max-width: 768px) { /* Adjust as needed */
+    .offcanvas-body .nav-link {
+        display: block; /* Ensure links are block elements */
+        padding: 10px 15px; /* Adjust padding for better touch targets */
+        background: none; /* Remove background */
+        border: none; /* Remove border */
+        color: #000; /* Set text color */
+        text-align: left; /* Align text */
+    }
+    .offcanvas-body .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Optional hover effect */
+    }
+}
 
 
 /* 2. Billboard
@@ -1327,6 +1340,25 @@ figure.instagram-item img.insta-image {
       padding-right: 20px!important;
   }
 }
+
+
+
+
+
+
+
+
+.logo
+{
+    width:100px;
+    height :100px;
+}
+
+
+
+
+
+
 
 
 /* 10. Cart Page
